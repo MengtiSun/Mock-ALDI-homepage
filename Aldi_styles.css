@@ -4,17 +4,21 @@
 }
 
 body {
-    width: 950px;
+    width: 970px;
     margin: auto;
-    background: url("images/background.jpg");
+    background: url("images/background.jpg") no-repeat;
+    background-attachment: fixed;
 }
 
+
+/*header部分*/
 .header {
     float: right;
     background-color: white;
     padding: 0 8px 0 10px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    box-shadow: 0 0 6px black;
 }
 
 .header a {
@@ -29,6 +33,263 @@ body {
 .header a:hover {
     text-decoration: underline;
 }
+
+
+/*main部分*/
+/*shopping list部分*/
+.list {
+    clear: both;
+}
+
+.shopping_list div {
+    margin: -90px 10px 0 819px;
+    background: #CCC url("images/shoppinglist.png") no-repeat 10px center;
+    padding: 4px 0 6px 37px;
+    border-radius: 2px;
+}
+
+.shopping_list div a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 12px;
+    color: #0F0F55;
+    font-family: Arial;
+}
+
+/*nav bar部分*/
+.nav {
+    margin-top: 16px;
+    background: #0F0F55;
+    overflow: hidden;
+    height: 46px;
+    padding-left: 110px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.nav ul {
+    padding-top: 5px;
+}
+
+.nav ul li {
+    list-style: none;
+    float: left;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 42px;
+
+}
+
+.nav ul li a:hover {
+    background-color: red;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+/*ad images部分*/
+.main {
+    clear: both;
+    padding: 18px 0 0 10px;
+    background: white;
+    overflow: hidden;
+}
+
+.main .ad_images .moving_ad {
+    float: left;
+    margin-right: 10px;
+}
+
+.main .ad_images>a img  {
+    padding: 0 7px 8px 0;
+}
+
+
+/*文字描述部分*/
+.main .discription {
+    margin-right: 14px;
+}
+
+.main h2 {
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.main p {
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 12px;
+    margin-bottom: 13px;
+}
+
+.main h1 {
+    font-family: Arial;
+    color: white;
+    font-size: 15px;
+    background: #9BA5C8;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.main .discription img {
+    margin-top: 17px;
+}
+
+.main .discription .alcohol {
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 12px;
+    font-style: italic;
+    vertical-align: 30px;
+    padding-left: 5px;
+}
+
+.main .top {
+    float: right;
+    padding:10px 60px;
+    margin-right: 12px;
+    background: #F5F5FA;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.main .top a {
+    text-decoration: none;
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.main .top a:hover {
+    text-decoration: underline;
+}
+
+.main .top a span {
+    font-size: 0;
+    border: 6px solid #0F0F55;
+    border-top-color: #F5F5FA;
+    border-left-color: #F5F5FA;
+    border-right-color: #F5F5FA;
+    /*vertical-align: 10px;*/
+    float: right;
+    margin-left: 3px;
+}
+
+
+
+/*footer部分*/
+.footer .print {
+    clear: both;
+    height: 35px;
+    background: #E1E1EB;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-top: 10px;
+}
+
+.footer .print a {
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer .print a:hover {
+    text-decoration: underline;
+}
+
+.footer .print a:first-child {
+    padding-left: 20px;
+}
+
+.footer .print div {
+    float: right;
+}
+
+.footer .print div a {
+    padding-right: 30px;
+}
+
+.footer .print span {
+    font-family: Arial;
+    color: #787DA5;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+
+
+/*catelogue部分*/
+.footer .catelogue {
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.footer .catelogue a:hover {
+    text-decoration: underline;
+}
+
+.footer .catelogue div {
+    width: 220px;
+    float: left;
+}
+
+.footer .catelogue h1 {
+    margin-bottom: 20px;
+}
+
+.footer .catelogue h1 a {
+    font-family: Arial;
+    color: #969BB4;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer .catelogue div {
+    height: 498px;
+    border-left: 1px solid #E1E1EB;
+    padding-left: 10px;
+}
+
+.footer .catelogue div:first-child {
+    border: none;
+}
+
+.footer .catelogue li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.footer .catelogue li a {
+    font-family: Arial;
+    color: #0F0F55;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
