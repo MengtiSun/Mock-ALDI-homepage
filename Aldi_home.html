@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Aldi_styles.css">
+    <script src="Aldi_script.js"></script>
     <title>Discount supermarket offering smarter shopping - ALDI Australia</title>
 </head>
 <body>
@@ -24,17 +25,89 @@
     </div>
     <div class="nav">
         <ul>
-            <li><a href="#">Special Buys</a></li>
-            <li><a href="#">Groceries</a></li>
-            <li><a href="#">Shopping At ALDI</a></li>
-            <li><a href="#">About ALDI</a></li>
+            <li>
+                <a id="special_buys" href="#">Special Buys</a>
+                <div class="navShow1" id="navShow1">
+                    <ul>
+                        <li><a href="#">Special Buys Wed 13 Apr</a></li>
+                        <li><a href="#">Special Buys Sat 16 Apr</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="groceries" href="#">Groceries</a>
+                <div class="navShow1" id="navShow2">
+                    <ul>
+                        <li><a href="#">7 Day Deals</a></li>
+                        <li><a href="#">Home of the Lowest Price</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Chocolate</a></li>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Gluten Free</a></li>
+                        <li><a href="#">Laundry</a></li>
+                        <li><a href="#">Liquor</a></li>
+                        <li><a href="#">Oliver Oils</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Product Reviews</a></li>
+                        <li><a href="#">Recipts</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="shopping" href="#">Shopping At ALDI</a>
+                <div class="navShow1" id="navShow3">
+                    <ul>
+                        <li><a href="#">Store Location and Opening Hours</a></li>
+                        <li><a href="#">SA now open, WA coming soon</a></li>
+                        <li><a href="#">Supermarket Switch Challenge</a></li>
+                        <li><a href="#">Smartphone Apps</a></li>
+                        <li><a href="#">ALDImobile</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="ALDI" href="#">About ALDI</a>
+                <div class="navShow1" id="navShow4">
+                    <ul>
+                        <li><a href="#">Australian Made</a></li>
+                        <li><a href="#">Customer Information</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Aldi Initiatives</a></li>
+                        <li><a href="#">TV Commercials</a></li>
+                        <li><a href="#">Connect with ALDI</a></li>
+                        <li><a href="#">Contact ALDI</a></li>
+                        <li><a href="#">Product Recalls</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
 <div class="main">
     <div class="ad_images">
         <div class="moving_ad">
-            <a href="#"><img src="images/ad1_1.jpg" alt="special buy"></a>
+            <div class="changing_ad">
+                <ul id="ads">
+                    <li><a href="#"><img src="images/ad1_1.jpg" alt="special buy"></a></li>
+                    <li><a href="#"><img src="images/ad1_2.jpg" alt="special buy"></a></li>
+                    <li><a href="#"><img src="images/ad1_3.jpg" alt="special buy"></a></li>
+                    <li><a href="#"><img src="images/ad1_4.jpg" alt="special buy"></a></li>
+                </ul>
+            </div>
+
+            <div class="control_ad">
+                <li class="left" id="left_btn">
+                    <div></div>
+                </li>
+                <li class="number">
+                    <div id="number">1 / 4</div>
+                </li>
+                <li class="right" id="right_btn">
+                    <div></div>
+                </li>
+            </div>
         </div>
         <a href="#"><img src="images/ad2.jpg"></a>
         <a href="#"><img src="images/ad3.jpg"></a>
